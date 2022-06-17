@@ -75,6 +75,8 @@
                 include "blocks/search.php";
             } else if (isset($_GET["nav"]) && $_GET["nav"] == "home") {
                 include "blocks/home.php";
+            } else if (isset($_GET["nav"]) && $_GET["nav"] == "phone") {
+                include "blocks/phone.php";
             } else {
                 include "blocks/home.php";
             }

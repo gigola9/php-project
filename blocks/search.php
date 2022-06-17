@@ -56,6 +56,12 @@
     font-size: 14px;
     margin-top: 10px;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 </style>
 
 <div class="latest">
@@ -70,7 +76,7 @@
         ?>
                 <div class="item">
                     <img src="<?= $row['imageurl'] ?>">
-                    <h4><?= $row['factory'] ?> <?= $row['model'] ?></h4>
+                    <h4><a href="?nav=phone&id=<?= $row['id'] ?>"><?= $row['factory'] ?> <?= $row['model'] ?></a></h4>
                     <p><span>CPU:</span> <?= $row['cpu'] ?></p>
                     <p><span>RAM:</span> <?= $row['ram'] ?></p>
                     <h3 style="text-align: right; color: #1ABC9C;"><?= $row['price'] ?>₾</h3>
